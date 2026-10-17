@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student Online Platform for Bruneian Students in Egypt — demonstration website.">
+  <title>Student Online Platform | DEMO</title>
+  <style>
+    :root { --nile:#163f42; --nile-dark:#102e31; --sand:#f8f1e4; --gold:#e8c384; --ink:#21393b; --muted:#647574; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif; background:var(--sand); color:var(--ink); line-height:1.5; }
+    header { background:var(--nile-dark); color:white; padding:18px max(22px,calc((100vw - 1100px)/2)); display:flex; justify-content:space-between; align-items:center; gap:16px; }
+    .brand { font-size:1rem; font-weight:750; letter-spacing:.02em; }
+    .tag { border:1px solid var(--gold); border-radius:99px; color:var(--gold); padding:4px 12px; font-size:.76rem; font-weight:700; }
+    .hero { position:relative; overflow:hidden; background:linear-gradient(130deg,#163f42 0%,#21585a 70%,#286366 100%); color:white; text-align:center; padding:86px 22px 90px; }
+    .hero::before { content:""; position:absolute; inset:auto 0 0; height:130px; opacity:.17; background:linear-gradient(140deg,transparent 0 48%,#e8c384 48% 52%,transparent 52%) left bottom/210px 130px repeat-x; pointer-events:none; }
+    .hero > * { position:relative; }
+    .eyebrow { color:var(--gold); font-size:.85rem; letter-spacing:.19em; font-weight:800; text-transform:uppercase; }
+    .arabic { font-family:"Noto Naskh Arabic","Traditional Arabic",serif; font-size:clamp(1.7rem,4vw,2.6rem); color:var(--gold); margin:14px 0; direction:rtl; }
+    h1 { font-size:clamp(2.2rem,5vw,4rem); line-height:1.13; letter-spacing:-.04em; margin:12px auto; max-width:850px; }
+    .hero p { max-width:590px; margin:20px auto 0; color:#e3eeee; font-size:1.05rem; }
+    main { max-width:1100px; margin:auto; padding:60px 22px 80px; }
+    .section-kicker { color:#8c6d30; font-weight:800; text-transform:uppercase; font-size:.77rem; letter-spacing:.15em; }
+    h2 { font-size:clamp(1.65rem,3vw,2.2rem); margin:8px 0; }
+    .intro { color:var(--muted); margin:0 0 30px; }
+    .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+    .card { display:flex; flex-direction:column; background:#fffdf8; border:1px solid #e9dfcb; border-radius:16px; padding:26px; box-shadow:0 7px 24px rgba(18,53,55,.05); }
+    .symbol { width:48px; height:48px; display:grid; place-items:center; border-radius:12px; background:#e9eee9; color:var(--nile); font-size:1.35rem; font-weight:800; }
+    .card h3 { margin:20px 0 8px; font-size:1.16rem; }
+    .card p { color:var(--muted); font-size:.93rem; margin:0 0 22px; flex:1; }
+    .action { display:inline-block; align-self:flex-start; text-decoration:none; background:var(--nile); color:white; border-radius:9px; padding:10px 16px; font-weight:700; font-size:.88rem; }
+    .coming { display:inline-block; align-self:flex-start; background:#eee9dd; color:#726e64; border-radius:9px; padding:10px 16px; font-weight:700; font-size:.85rem; }
+    .notice { margin-top:36px; border-left:4px solid #c8a15d; background:#fffaf0; padding:18px 22px; border-radius:0 12px 12px 0; font-size:.93rem; }
+    footer { background:var(--nile-dark); color:#d4e1df; text-align:center; padding:32px 18px; }
+    footer .footer-ar { font-family:"Traditional Arabic",serif; color:var(--gold); font-size:1.35rem; margin-bottom:6px; }
+    footer small { font-size:.78rem; }
+    @media(max-width:850px) { .cards { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(max-width:560px) { .cards { grid-template-columns:1fr; } .hero { padding:62px 18px 68px; } main { padding-top:42px; } header { padding:16px 20px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Student Online Platform</div>
+    <span class="tag">DEMO</span>
+  </header>
+  <section class="hero">
+    <div class="eyebrow">Bruneian Students in Egypt</div>
+    <div class="arabic" lang="ar">أَهْلًا وَسَهْلًا بِكُمْ فِي مِصْرَ</div>
+    <h1>Welcome to Your Student Portal</h1>
+    <p>A simple place to find student services, important information and assistance during your studies in Egypt.</p>
+  </section>
+  <main>
+    <div class="section-kicker">How can we help?</div>
+    <h2>Student Services</h2>
+    <p class="intro">Choose a service below to get started.</p>
+    <div class="cards">
+      <article class="card"><div class="symbol" aria-hidden="true">01</div><h3>Student Registration</h3><p>Register or update your student information.</p><span class="coming">Link coming next</span></article>
+      <article class="card"><div class="symbol" aria-hidden="true">02</div><h3>Applications &amp; Forms</h3><p>Access student-related requests and forms.</p><span class="coming">Coming soon</span></article>
+      <article class="card"><div class="symbol" aria-hidden="true">03</div><h3>Appointments</h3><p>Find information about arranging an appointment.</p><span class="coming">Coming soon</span></article>
+      <article class="card"><div class="symbol" aria-hidden="true">04</div><h3>Accommodation</h3><p>Find accommodation-related information and guidance.</p><span class="coming">Coming soon</span></article>
+      <article class="card"><div class="symbol" aria-hidden="true">05</div><h3>Announcements</h3><p>See notices and updates relevant to students.</p><span class="coming">Coming soon</span></article>
+      <article class="card"><div class="symbol" aria-hidden="true">06</div><h3>Contact &amp; Assistance</h3><p>Find out where to ask for help or further information.</p><span class="coming">Coming soon</span></article>
+    </div>
+    <div class="notice"><strong>Demonstration only.</strong> This is a concept website, not an official student service. Please do not submit real student information during testing.</div>
+  </main>
+  <footer>
+    <div class="footer-ar" lang="ar" dir="rtl">بُرُونِي × مِصْر</div>
+    <small>Student Online Platform · Bruneian Students in Egypt · DEMO</small>
+  </footer>
+</body>
+</html>
